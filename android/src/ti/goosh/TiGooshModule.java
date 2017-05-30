@@ -94,16 +94,6 @@ public class TiGooshModule extends KrollModule {
 		}
 	}
 
-			if (!notification.isEmpty()) {
-				sendMessage(notification, true);
-			} else {
-				Log.d(LCAT, "No notification in Intent");
-			}
-		} catch (Exception ex) {
-			Log.e(LCAT, ex.getMessage());
-		}
-	}
-
 	private boolean checkPlayServices() {
 		Activity activity = TiApplication.getAppRootOrCurrentActivity();
 
